@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crest point media ventures - Contact Us</title>
+    <link rel="icon" href="WhatsApp Image 2025-03-03 at 00.53.45_d8b8652c.jpg" type="image/png">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #c04343; /* Light gray background */
+        }
+
+        header {
+            background-color: #db2f2f; /* Purple header */
+            color: rgb(230, 121, 121);
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: rgb(249, 246, 246);
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #6a006a; /* Darker purple on hover */
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 2rem;
+            color: #f8f6f8; /* Purple heading */
+        }
+
+        .form-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 2rem auto;
+            background-color: rgb(175, 157, 225);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+            font-size: 1rem;
+        }
+
+        .form-group button {
+            background-color: #800080; /* Purple button */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #6a006a; /* Darker purple on hover */
+        }
+
+        .response-message {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-weight: bold;
+            color: #800080; /* Purple response message */
+        }
+
+        .map-container {
+            width: 80%;
+            max-width: 600px;
+            margin: 2rem auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="About.html">About us</a>
+            <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="csr.html">CSR</a>
+            <a href="contact.html">Contact</a>
+            <a href="loginpage.html">Login/Sign up</a>
+        </nav>
+    </header>
+
+    <h2>Contact Us</h2>
+
+    <div class="form-container">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <button onclick="sendMessage()">Send Message</button>
+        </div>
+        <div id="response" class="response-message" style="display:none;"></div>
+    </div>
+    
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8093139364966!2d36.81724451475375!3d-1.2832534990647898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf025463f2560e!2sNairobi!5e0!3m2!1sen!2ske!4v1683995878411!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+    <script>
+        function sendMessage() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+        
+            // Simulate sending message (replace with your actual backend logic)
+            setTimeout(() => {
+                document.getElementById('response').textContent = "Thank you, " + name + "! Your message has been sent.";
+                document.getElementById('response').style.display = 'block';
+            }, 1000); // Simulate a 1-second delay
+        }
+    </script>
+    
+</body>
+</html>

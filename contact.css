@@ -1,0 +1,133 @@
+/* Contact Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fbf6f6;
+    background-color: #be3b4e; /* Light background */
+}
+.contact-page {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #953737;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-page h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #c5d2de;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    text-align: center;
+    margin: 15px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #0a0a0a;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.map-container {
+    text-align: center;
+}
+
+.map-container iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-details {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+a {
+    text-decoration: none;
+    color: #3498db; /* Blue link color */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2980b9; /* Darker blue on hover */
+}
+
+/* Header and Navigation */
+header {
+    background-color: #ec3c79; /* Dark header background */
+    color: rgb(215, 44, 87);
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(18, 18, 18, 0.1);
+}
+
+nav a {
+    color: rgb(250, 244, 244);
+    margin: 0 15px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #e16d8e;
+    text-decoration: none;
+}
+footer {
+    background-color: #5950d7;
+    color: rgb(236, 236, 241);
+    text-align: center;
+    padding: 20px 0;
+    margin-top:20px;
+}
+.button {
+    background-color: #3d26d5;
+    color: rgb(244, 243, 247);
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #6b57cd;
+    text-decoration:none;
+}
